@@ -110,6 +110,12 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Choose Flavors Please!" id="BJl-57-v7O"/>
+                    <connections>
+                        <outlet property="collectionView" destination="oBF-Bs-nNw" id="Hnf-dY-a1V"/>
+                        <outlet property="contentView" destination="fmn-ld-LQS" id="5ZU-eB-Ah0"/>
+                        <outlet property="iceCreamView" destination="rvJ-wc-5Q6" id="Pmh-Rz-E4L"/>
+                        <outlet property="label" destination="q8F-Ax-Rcr" id="mWB-bA-lMc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
