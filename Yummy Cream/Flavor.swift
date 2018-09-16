@@ -34,8 +34,6 @@ struct Flavor {
         
         // Init from things above
         self.init(name: name, topColor: topColor, bottomColor: bottomColor)
-        
-        
     }
     
     init(name: String, topColor: UIColor, bottomColor: UIColor) {
