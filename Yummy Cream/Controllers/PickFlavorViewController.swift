@@ -46,3 +46,20 @@ extension PickFlavorViewController: FlavorAdapter {
         label.text = flavor.name
     }
 }
+
+
+// MARK: - UICollectionViewDataSource
+extension PickFlavorViewController: UICollectionViewDataSource {
+    // TODO: - FIXME!
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return flavors.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+    }
+    
+    
+}
+
