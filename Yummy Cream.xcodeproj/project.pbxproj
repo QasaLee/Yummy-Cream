@@ -54,14 +54,62 @@
 		FB523897214E2D3600585924 /* Yummy Cream */ = {
 			isa = PBXGroup;
 			children = (
-				FB523898214E2D3600585924 /* AppDelegate.swift */,
-				FB52389A214E2D3600585924 /* ViewController.swift */,
-				FB52389C214E2D3600585924 /* Main.storyboard */,
-				FB52389F214E2D3700585924 /* Assets.xcassets */,
-				FB5238A1214E2D3700585924 /* LaunchScreen.storyboard */,
-				FB5238A4214E2D3700585924 /* Info.plist */,
+				FB5238AC214E2F1300585924 /* AppDelegate */,
+				FB5238AD214E2F2D00585924 /* Controllers */,
+				FB5238AA214E2EA700585924 /* Views */,
+				FB5238AF214E2F7400585924 /* Resources */,
+				FB5238AE214E2F5300585924 /* Supporting Files */,
 			);
 			path = "Yummy Cream";
+			sourceTree = "<group>";
+		};
+		FB5238AA214E2EA700585924 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB5238AB214E2EC600585924 /* Storyboards & Nibs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB5238AB214E2EC600585924 /* Storyboards & Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				FB52389C214E2D3600585924 /* Main.storyboard */,
+				FB5238A1214E2D3700585924 /* LaunchScreen.storyboard */,
+			);
+			path = "Storyboards & Nibs";
+			sourceTree = "<group>";
+		};
+		FB5238AC214E2F1300585924 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FB523898214E2D3600585924 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FB5238AD214E2F2D00585924 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB52389A214E2D3600585924 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB5238AE214E2F5300585924 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB5238A4214E2D3700585924 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB5238AF214E2F7400585924 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB52389F214E2D3700585924 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQY7L3XZHF;
-				INFOPLIST_FILE = "Yummy Cream/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Yummy Cream/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQY7L3XZHF;
-				INFOPLIST_FILE = "Yummy Cream/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Yummy Cream/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
