@@ -58,14 +58,36 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScoopCell" id="3ck-JA-Wx6">
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScoopCell" id="3ck-JA-Wx6">
                                         <rect key="frame" x="0.0" y="0.0" width="81" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="81" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-k4-ynZ">
+                                                    <rect key="frame" x="18" y="5" width="45" height="45"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="GbO-Ct-BQm"/>
+                                                        <constraint firstAttribute="width" constant="45" id="NAF-MY-eoM"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strawberry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNJ-Y1-7mx">
+                                                    <rect key="frame" x="11.5" y="50.5" width="58" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="vNJ-Y1-7mx" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="Hyf-Wh-1iX"/>
+                                            <constraint firstAttribute="bottom" secondItem="vNJ-Y1-7mx" secondAttribute="bottom" constant="2" id="bLZ-sW-fIS"/>
+                                            <constraint firstItem="QOu-k4-ynZ" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="q8M-4W-Vs5"/>
+                                            <constraint firstItem="QOu-k4-ynZ" firstAttribute="top" secondItem="3ck-JA-Wx6" secondAttribute="top" constant="5" id="ri5-B4-o17"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
