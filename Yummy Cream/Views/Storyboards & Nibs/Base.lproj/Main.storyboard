@@ -52,41 +52,41 @@
                                     <constraint firstAttribute="height" constant="80" id="wyc-gF-mNa"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K9f-21-p3a">
-                                    <size key="itemSize" width="81" height="66"/>
+                                    <size key="itemSize" width="70" height="70"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="5" maxX="10" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScoopCell" id="3ck-JA-Wx6" customClass="ScoopCell" customModule="Yummy_Cream" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="66"/>
+                                        <rect key="frame" x="10" y="5" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="81" height="66"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-k4-ynZ" customClass="ScoopView" customModule="Yummy_Cream" customModuleProvider="target">
-                                                    <rect key="frame" x="18" y="5" width="45" height="45"/>
-                                                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="45" id="GbO-Ct-BQm"/>
-                                                        <constraint firstAttribute="width" constant="45" id="NAF-MY-eoM"/>
-                                                    </constraints>
-                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strawberry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNJ-Y1-7mx">
-                                                    <rect key="frame" x="11.5" y="50.5" width="58" height="13.5"/>
+                                                    <rect key="frame" x="6" y="54.5" width="58" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-k4-ynZ" customClass="ScoopView" customModule="Yummy_Cream" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="8" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="AWm-hG-Qg4"/>
+                                                        <constraint firstAttribute="height" constant="40" id="J7R-xk-WJO"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="vNJ-Y1-7mx" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="Hyf-Wh-1iX"/>
-                                            <constraint firstAttribute="bottom" secondItem="vNJ-Y1-7mx" secondAttribute="bottom" constant="2" id="bLZ-sW-fIS"/>
-                                            <constraint firstItem="QOu-k4-ynZ" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="q8M-4W-Vs5"/>
-                                            <constraint firstItem="QOu-k4-ynZ" firstAttribute="top" secondItem="3ck-JA-Wx6" secondAttribute="top" constant="5" id="ri5-B4-o17"/>
+                                            <constraint firstAttribute="bottom" secondItem="vNJ-Y1-7mx" secondAttribute="bottom" constant="2" id="2uj-dL-V4J"/>
+                                            <constraint firstItem="QOu-k4-ynZ" firstAttribute="top" secondItem="3ck-JA-Wx6" secondAttribute="top" constant="8" id="Tl1-4I-epZ"/>
+                                            <constraint firstItem="QOu-k4-ynZ" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="hSA-ry-Wbr"/>
+                                            <constraint firstItem="vNJ-Y1-7mx" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="vvI-P0-Fvu"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
