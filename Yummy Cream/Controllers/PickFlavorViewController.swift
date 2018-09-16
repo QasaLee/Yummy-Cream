@@ -33,7 +33,7 @@ class PickFlavorViewController: UIViewController {
     
     fileprivate func selectFirstFlavor() {
         guard let flavor = flavors.first else { return }
-        
+        update(with: flavor)
     }
     
 
