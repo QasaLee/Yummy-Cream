@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol FlavorAdapter {
+    func update(with flavor: Flavor)
+}
+
 struct Flavor {
     
     // MARK: - Static Properties
