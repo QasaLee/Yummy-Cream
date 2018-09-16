@@ -9,6 +9,7 @@
 import UIKit
 
 struct Flavor {
+    
     // MARK: - Static Properties
     static var chocolate: Flavor {
         return Flavor(name: "Chocolate", topColor: UIColor.RGB(203, 140, 58), bottomColor: UIColor.RGB(107, 46, 11))
@@ -21,6 +22,26 @@ struct Flavor {
     let name: String
     let topColor: UIColor
     let bottomColor: UIColor
- 
+    
+    // MARK: - Object Lifecycle
+    init?(dictionary: [String: String]) {
+        guard let name = dictionary["name"],
+            let topColorString = dictionary["topColor"],
+            let bottomColorString = dictionary["bottomColor"],
+            let topColor = UIColor(rgbaString: topColorString),
+            let bottomColor = UIColor(rgbaString: bottomColorString)
+            else { return nil }
+        
+        // Init from things above
+        self.init(name: name, topColor: topColor, bottomColor: bottomColor)
+        
+        
+    }
+    
+    init(name: String, topColor: UIColor, bottomColor: UIColor) {
+        self.name = name
+        self.topColor = topColor
+        self.bottomColor = bottomColor
+    }
     
 }
