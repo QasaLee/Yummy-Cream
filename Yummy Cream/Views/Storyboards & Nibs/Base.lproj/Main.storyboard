@@ -29,11 +29,10 @@
                                         <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvJ-wc-5Q6" customClass="IceCreamView" customModule="Yummy_Cream" customModuleProvider="target">
-                                        <rect key="frame" x="81" y="40" width="213" height="426"/>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvJ-wc-5Q6" customClass="IceCreamView" customModule="Yummy_Cream" customModuleProvider="target">
+                                        <rect key="frame" x="83.5" y="40" width="215" height="430"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="426" id="8wJ-EY-rbq"/>
-                                            <constraint firstAttribute="width" constant="213" id="O0M-GF-81G"/>
+                                            <constraint firstAttribute="width" secondItem="rvJ-wc-5Q6" secondAttribute="height" multiplier="1:2" id="w7t-CG-hla"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -42,7 +41,8 @@
                                     <constraint firstItem="rvJ-wc-5Q6" firstAttribute="top" secondItem="fmn-ld-LQS" secondAttribute="top" constant="40" id="HlA-sS-TPi"/>
                                     <constraint firstItem="q8F-Ax-Rcr" firstAttribute="centerX" secondItem="fmn-ld-LQS" secondAttribute="centerX" id="QFh-Ka-gxi"/>
                                     <constraint firstAttribute="bottom" secondItem="q8F-Ax-Rcr" secondAttribute="bottom" constant="10" id="VMS-A0-Ffd"/>
-                                    <constraint firstItem="rvJ-wc-5Q6" firstAttribute="centerX" secondItem="fmn-ld-LQS" secondAttribute="centerX" id="ldQ-Eh-lzi"/>
+                                    <constraint firstItem="q8F-Ax-Rcr" firstAttribute="top" secondItem="rvJ-wc-5Q6" secondAttribute="bottom" constant="10" id="dfF-AJ-ag6"/>
+                                    <constraint firstItem="rvJ-wc-5Q6" firstAttribute="centerX" secondItem="fmn-ld-LQS" secondAttribute="centerX" constant="3.5" id="ldQ-Eh-lzi"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oBF-Bs-nNw">
