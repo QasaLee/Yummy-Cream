@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB523899214E2D3600585924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB523898214E2D3600585924 /* AppDelegate.swift */; };
-		FB52389B214E2D3600585924 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52389A214E2D3600585924 /* ViewController.swift */; };
+		FB52389B214E2D3600585924 /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52389A214E2D3600585924 /* PickFlavorViewController.swift */; };
 		FB52389E214E2D3600585924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52389C214E2D3600585924 /* Main.storyboard */; };
 		FB5238A0214E2D3700585924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB52389F214E2D3700585924 /* Assets.xcassets */; };
 		FB5238A3214E2D3700585924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5238A1214E2D3700585924 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		FB523895214E2D3600585924 /* Yummy Cream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yummy Cream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB523898214E2D3600585924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB52389A214E2D3600585924 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB52389A214E2D3600585924 /* PickFlavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickFlavorViewController.swift; sourceTree = "<group>"; };
 		FB52389D214E2D3600585924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB52389F214E2D3700585924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5238A2214E2D3700585924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		FB5238AD214E2F2D00585924 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB52389A214E2D3600585924 /* ViewController.swift */,
+				FB52389A214E2D3600585924 /* PickFlavorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB52389B214E2D3600585924 /* ViewController.swift in Sources */,
+				FB52389B214E2D3600585924 /* PickFlavorViewController.swift in Sources */,
 				FB523899214E2D3600585924 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
