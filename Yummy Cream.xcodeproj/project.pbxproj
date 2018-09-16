@@ -17,6 +17,7 @@
 		FB66D1B6214E73DF00E843E6 /* ScoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B5214E73DF00E843E6 /* ScoopView.swift */; };
 		FB66D1BA214E7A7600E843E6 /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B9214E7A7600E843E6 /* Flavor.swift */; };
 		FB66D1BC214E7AC500E843E6 /* FlavorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */; };
+		FB66D1BF214E7BE000E843E6 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1BE214E7BE000E843E6 /* UIColor+RGBA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FB66D1B5214E73DF00E843E6 /* ScoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoopView.swift; path = "Yummy Cream/Views/Ice Cream/ScoopView.swift"; sourceTree = SOURCE_ROOT; };
 		FB66D1B9214E7A7600E843E6 /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
 		FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorFactory.swift; sourceTree = "<group>"; };
+		FB66D1BE214E7BE000E843E6 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				FB5238AA214E2EA700585924 /* Views */,
 				FB5238AD214E2F2D00585924 /* Controllers */,
 				FB5238AF214E2F7400585924 /* Resources */,
+				FB66D1BD214E7BB200E843E6 /* Extensions */,
 				FB5238AE214E2F5300585924 /* Supporting Files */,
 			);
 			path = "Yummy Cream";
@@ -152,6 +155,14 @@
 			name = Factories;
 			sourceTree = "<group>";
 		};
+		FB66D1BD214E7BB200E843E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB66D1BE214E7BE000E843E6 /* UIColor+RGBA.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB66D1BC214E7AC500E843E6 /* FlavorFactory.swift in Sources */,
+				FB66D1BF214E7BE000E843E6 /* UIColor+RGBA.swift in Sources */,
 				FB52389B214E2D3600585924 /* PickFlavorViewController.swift in Sources */,
 				FB66D1B6214E73DF00E843E6 /* ScoopView.swift in Sources */,
 				FB523899214E2D3600585924 /* AppDelegate.swift in Sources */,
