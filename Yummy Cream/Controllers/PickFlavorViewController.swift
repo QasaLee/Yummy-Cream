@@ -22,9 +22,27 @@ class PickFlavorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        loadFlavors()
     }
 
+    // MARK: - helper methods
+    fileprivate func loadFlavors() {
+        // TODO: - FIXME!
+    }
+    
+    fileprivate func selectFirstFlavor() {
+        guard let flavor = flavors.first else { return }
+        
+    }
+    
 
 }
 
+// MARK: - Flavor Adapter
+extension PickFlavorViewController: FlavorAdapter {
+    func update(with flavor: Flavor) {
+        self.iceCreamView.update(with: flavor)
+        label.text = flavor.name
+    }
+}
