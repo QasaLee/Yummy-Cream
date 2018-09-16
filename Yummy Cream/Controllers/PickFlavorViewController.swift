@@ -10,12 +10,14 @@ import UIKit
 
 class PickFlavorViewController: UIViewController {
     
+    // MARK: - Instance Properties
+    var flavors: [Flavor] = []
+    fileprivate let flavorFactory = FlavorFactory()
+    
+    // MARK: - IB Outlets
     @IBOutlet weak var contentView: UIView!
-    
     @IBOutlet weak var iceCreamView: IceCreamView!
-    
     @IBOutlet weak var label: UILabel!
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {

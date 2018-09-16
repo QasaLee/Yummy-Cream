@@ -15,6 +15,8 @@
 		FB66D1B2214E737500E843E6 /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B1214E737500E843E6 /* IceCreamView.swift */; };
 		FB66D1B4214E739C00E843E6 /* ScoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B3214E739C00E843E6 /* ScoopCell.swift */; };
 		FB66D1B6214E73DF00E843E6 /* ScoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B5214E73DF00E843E6 /* ScoopView.swift */; };
+		FB66D1BA214E7A7600E843E6 /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B9214E7A7600E843E6 /* Flavor.swift */; };
+		FB66D1BC214E7AC500E843E6 /* FlavorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FB66D1B1214E737500E843E6 /* IceCreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IceCreamView.swift; path = "Yummy Cream/Views/Ice Cream/IceCreamView.swift"; sourceTree = SOURCE_ROOT; };
 		FB66D1B3214E739C00E843E6 /* ScoopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoopCell.swift; path = "Yummy Cream/Views/Ice Cream/ScoopCell.swift"; sourceTree = SOURCE_ROOT; };
 		FB66D1B5214E73DF00E843E6 /* ScoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoopView.swift; path = "Yummy Cream/Views/Ice Cream/ScoopView.swift"; sourceTree = SOURCE_ROOT; };
+		FB66D1B9214E7A7600E843E6 /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
+		FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				FB5238AC214E2F1300585924 /* AppDelegate */,
-				FB5238AD214E2F2D00585924 /* Controllers */,
+				FB66D1B7214E7A5200E843E6 /* Models */,
+				FB66D1B8214E7A5D00E843E6 /* Factories */,
 				FB5238AA214E2EA700585924 /* Views */,
+				FB5238AD214E2F2D00585924 /* Controllers */,
 				FB5238AF214E2F7400585924 /* Resources */,
 				FB5238AE214E2F5300585924 /* Supporting Files */,
 			);
@@ -128,6 +134,22 @@
 			);
 			name = "Ice Cream";
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FB66D1B7214E7A5200E843E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB66D1B9214E7A7600E843E6 /* Flavor.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB66D1B8214E7A5D00E843E6 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */,
+			);
+			name = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB66D1BC214E7AC500E843E6 /* FlavorFactory.swift in Sources */,
 				FB52389B214E2D3600585924 /* PickFlavorViewController.swift in Sources */,
 				FB66D1B6214E73DF00E843E6 /* ScoopView.swift in Sources */,
 				FB523899214E2D3600585924 /* AppDelegate.swift in Sources */,
+				FB66D1BA214E7A7600E843E6 /* Flavor.swift in Sources */,
 				FB66D1B4214E739C00E843E6 /* ScoopCell.swift in Sources */,
 				FB66D1B2214E737500E843E6 /* IceCreamView.swift in Sources */,
 			);
