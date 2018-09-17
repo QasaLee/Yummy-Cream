@@ -18,7 +18,8 @@ class ScoopCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        layer.cornerRadius = 10.0
+        layer.cornerRadius = 8.8
+        
     }
     
 }

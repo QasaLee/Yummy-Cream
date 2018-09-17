@@ -29,10 +29,11 @@ class ScoopView: UIView {
         // All is copied from the original one.
         let context = UIGraphicsGetCurrentContext()!
         
+//        let path = CGPath(roundedRect: bounds, cornerWidth: 5, cornerHeight: 5, transform: nil)
         let path = CGPath(ellipseIn: bounds, transform: nil)
         context.addPath(path)
-        context.clip()
-        
+//        context.clip()
+
         let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(),
                                   colors: [topColor.cgColor, bottomColor.cgColor] as CFArray,
                                   locations: [0, 1])!
