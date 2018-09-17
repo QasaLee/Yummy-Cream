@@ -10,4 +10,17 @@ import UIKit
 
 class ScoopCell: UICollectionViewCell {
     
+    // MARK: - Outlets
+    @IBOutlet weak var scoopView: ScoopView!
+    @IBOutlet weak var textLabel: UILabel!
+    
+    // MARK: - UIView
+    
+}
+
+// MARK: - FlavorAdapter
+extension ScoopCell: FlavorAdapter {
+    func update(with flavor: Flavor) {
+        
+    }
 }

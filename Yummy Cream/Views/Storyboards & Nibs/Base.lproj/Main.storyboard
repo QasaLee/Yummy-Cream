@@ -88,6 +88,10 @@
                                             <constraint firstItem="QOu-k4-ynZ" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="hSA-ry-Wbr"/>
                                             <constraint firstItem="vNJ-Y1-7mx" firstAttribute="centerX" secondItem="3ck-JA-Wx6" secondAttribute="centerX" id="vvI-P0-Fvu"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="scoopView" destination="QOu-k4-ynZ" id="xW9-ja-ihM"/>
+                                            <outlet property="textLabel" destination="vNJ-Y1-7mx" id="9QM-Qx-3rq"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

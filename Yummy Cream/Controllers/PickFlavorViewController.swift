@@ -50,14 +50,19 @@ extension PickFlavorViewController: FlavorAdapter {
 
 // MARK: - UICollectionViewDataSource
 extension PickFlavorViewController: UICollectionViewDataSource {
-    // TODO: - FIXME!
+    
+    private struct CellIdentifier {
+        static let scoop = "ScoopCell"
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return flavors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.scoop, for: indexPath) as! ScoopCell
+        let flavor = flavors[indexPath.row]
+//        cell.update
     }
     
     
