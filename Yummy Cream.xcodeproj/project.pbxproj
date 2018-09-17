@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7AE59F7F0CA49482346CA4 /* Pods_Yummy_Cream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F468A527011BF8A204D8DE /* Pods_Yummy_Cream.framework */; };
 		FB523899214E2D3600585924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB523898214E2D3600585924 /* AppDelegate.swift */; };
 		FB52389B214E2D3600585924 /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52389A214E2D3600585924 /* PickFlavorViewController.swift */; };
 		FB52389E214E2D3600585924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52389C214E2D3600585924 /* Main.storyboard */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B384C8671C4FAA2C9033926 /* Pods-Yummy Cream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummy Cream.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yummy Cream/Pods-Yummy Cream.release.xcconfig"; sourceTree = "<group>"; };
+		42F468A527011BF8A204D8DE /* Pods_Yummy_Cream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummy_Cream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E0E7024AF401030A0FA0DA /* Pods-Yummy Cream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummy Cream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yummy Cream/Pods-Yummy Cream.debug.xcconfig"; sourceTree = "<group>"; };
 		FB523895214E2D3600585924 /* Yummy Cream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yummy Cream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB523898214E2D3600585924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB52389A214E2D3600585924 /* PickFlavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickFlavorViewController.swift; sourceTree = "<group>"; };
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7AE59F7F0CA49482346CA4 /* Pods_Yummy_Cream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4BB37509C9D8DF53A4D590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F468A527011BF8A204D8DE /* Pods_Yummy_Cream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6CA3AB20F8B58FF95925C26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59E0E7024AF401030A0FA0DA /* Pods-Yummy Cream.debug.xcconfig */,
+				2B384C8671C4FAA2C9033926 /* Pods-Yummy Cream.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB52388C214E2D3600585924 = {
 			isa = PBXGroup;
 			children = (
 				FB523897214E2D3600585924 /* Yummy Cream */,
 				FB523896214E2D3600585924 /* Products */,
+				B6CA3AB20F8B58FF95925C26 /* Pods */,
+				0C4BB37509C9D8DF53A4D590 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5238A7214E2D3700585924 /* Build configuration list for PBXNativeTarget "Yummy Cream" */;
 			buildPhases = (
+				DD0EF3330FBB977E5D9A528E /* [CP] Check Pods Manifest.lock */,
 				FB523891214E2D3600585924 /* Sources */,
 				FB523892214E2D3600585924 /* Frameworks */,
 				FB523893214E2D3600585924 /* Resources */,
+				8B7E1CC782BF7E4748D550EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +254,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B7E1CC782BF7E4748D550EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yummy Cream/Pods-Yummy Cream-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yummy Cream/Pods-Yummy Cream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0EF3330FBB977E5D9A528E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yummy Cream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB523891214E2D3600585924 /* Sources */ = {
@@ -385,6 +452,7 @@
 		};
 		FB5238A8214E2D3700585924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E0E7024AF401030A0FA0DA /* Pods-Yummy Cream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,6 +471,7 @@
 		};
 		FB5238A9214E2D3700585924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B384C8671C4FAA2C9033926 /* Pods-Yummy Cream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
