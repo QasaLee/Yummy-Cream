@@ -30,7 +30,7 @@ class IceCreamView: UIView {
     }
     
     // MARK: - View Lifecycle
-    override func draw(_ rect: CGRect) {
+    override func draw(_ frame: CGRect) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
@@ -69,6 +69,7 @@ class IceCreamView: UIView {
         conePath.addLine(to: CGPoint(x: frame.minX + 0.49265 * frame.width, y: frame.minY + 0.98886 * frame.height))
         conePath.addLine(to: CGPoint(x: frame.minX + 0.98284 * frame.width, y: frame.minY + 0.29579 * frame.height))
         conePath.close()
+        
         conePath.lineJoinStyle = CGLineJoin.round;
         
         context.saveGState()
