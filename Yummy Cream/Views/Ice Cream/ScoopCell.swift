@@ -15,12 +15,21 @@ class ScoopCell: UICollectionViewCell {
     @IBOutlet weak var textLabel: UILabel!
     
     // MARK: - UIView
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        layer.cornerRadius = 10.0
+    }
     
 }
 
 // MARK: - FlavorAdapter
 extension ScoopCell: FlavorAdapter {
     func update(with flavor: Flavor) {
+        scoopView.topColor = flavor.topColor
+        scoopView.bottomColor = flavor.bottomColor
+        textLabel.text = flavor.name
         
+        scoopView.setNeedsDisplay()
     }
 }
