@@ -12,13 +12,13 @@
 		FB52389B214E2D3600585924 /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52389A214E2D3600585924 /* PickFlavorViewController.swift */; };
 		FB52389E214E2D3600585924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB52389C214E2D3600585924 /* Main.storyboard */; };
 		FB5238A0214E2D3700585924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB52389F214E2D3700585924 /* Images.xcassets */; };
-		FB5238A3214E2D3700585924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5238A1214E2D3700585924 /* LaunchScreen.storyboard */; };
 		FB66D1B2214E737500E843E6 /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B1214E737500E843E6 /* IceCreamView.swift */; };
 		FB66D1B4214E739C00E843E6 /* ScoopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B3214E739C00E843E6 /* ScoopCell.swift */; };
 		FB66D1B6214E73DF00E843E6 /* ScoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B5214E73DF00E843E6 /* ScoopView.swift */; };
 		FB66D1BA214E7A7600E843E6 /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1B9214E7A7600E843E6 /* Flavor.swift */; };
 		FB66D1BC214E7AC500E843E6 /* FlavorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */; };
 		FB66D1BF214E7BE000E843E6 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1BE214E7BE000E843E6 /* UIColor+RGBA.swift */; };
+		FB83BF56215002E70022170B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB83BF55215002E70022170B /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		FB52389A214E2D3600585924 /* PickFlavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickFlavorViewController.swift; sourceTree = "<group>"; };
 		FB52389D214E2D3600585924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB52389F214E2D3700585924 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FB5238A2214E2D3700585924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5238A4214E2D3700585924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB66D1B1214E737500E843E6 /* IceCreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IceCreamView.swift; path = "Yummy Cream/Views/Ice Cream/IceCreamView.swift"; sourceTree = SOURCE_ROOT; };
 		FB66D1B3214E739C00E843E6 /* ScoopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoopCell.swift; path = "Yummy Cream/Views/Ice Cream/ScoopCell.swift"; sourceTree = SOURCE_ROOT; };
@@ -38,6 +37,7 @@
 		FB66D1B9214E7A7600E843E6 /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
 		FB66D1BB214E7AC500E843E6 /* FlavorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorFactory.swift; sourceTree = "<group>"; };
 		FB66D1BE214E7BE000E843E6 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
+		FB83BF55215002E70022170B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FB52389C214E2D3600585924 /* Main.storyboard */,
-				FB5238A1214E2D3700585924 /* LaunchScreen.storyboard */,
+				FB83BF55215002E70022170B /* Launch Screen.storyboard */,
 			);
 			path = "Storyboards & Nibs";
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5238A3214E2D3700585924 /* LaunchScreen.storyboard in Resources */,
+				FB83BF56215002E70022170B /* Launch Screen.storyboard in Resources */,
 				FB5238A0214E2D3700585924 /* Images.xcassets in Resources */,
 				FB52389E214E2D3600585924 /* Main.storyboard in Resources */,
 			);
@@ -321,14 +321,6 @@
 				FB52389D214E2D3600585924 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FB5238A1214E2D3700585924 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB5238A2214E2D3700585924 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
