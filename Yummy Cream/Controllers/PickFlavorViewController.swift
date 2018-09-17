@@ -67,4 +67,10 @@ extension PickFlavorViewController: UICollectionViewDataSource {
     }
 }
 
-// TODO: - UICollectionViewDelegate
+// MARK: - UICollectionViewDelegate
+extension PickFlavorViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let flavor = flavors[indexPath.row]
+        update(with: flavor)
+    }
+}
