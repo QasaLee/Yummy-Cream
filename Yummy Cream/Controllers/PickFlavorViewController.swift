@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
 
 class PickFlavorViewController: UIViewController {
     
@@ -28,14 +30,47 @@ class PickFlavorViewController: UIViewController {
 
     // MARK: - helper methods
     fileprivate func loadFlavors() {
-        // TODO: - FIXME!
+        
+        showLoadingHUD()
+        
+        Alamofire.request("https://www.raywenderlich.com/downloads/Flavors.plist",
+                          method: HTTPMethod.get,
+                          parameters: nil,
+                          encoding: PropertyListEncoding(format: PropertyListSerialization.PropertyListFormat.xml, options: 0),
+                          headers: nil
+            ).responsePropertyList { [weak self] (data) in
+                
+                guard let strongSelf = self else {
+                    return
+                }
+                
+                guard data.result.isSuccess, let dicArray = data.result.value as? [[String: String]] else {
+                    return
+                }
+                
+                strongSelf.flavors = strongSelf.flavorFactory.flavorsFromDictionaryArray(named: dicArray)
+                strongSelf.collectionView.reloadData()
+                strongSelf.selectFirstFlavor()
+                
+                strongSelf.hideLoadingHUD()
+        }
     }
     
+    // MARK: - Helper Methods
     fileprivate func selectFirstFlavor() {
         guard let flavor = flavors.first else { return }
         update(with: flavor)
     }
     
+    fileprivate func showLoadingHUD() {
+//        let hud = MBProgressHUD.showAdded(to: self.contentView, animated: true)
+        let hud = MBProgressHUD.showAdded(to: self.contentView, animated: true)
+        hud.label.text = "Loading!!!"
+    }
+    
+    fileprivate func hideLoadingHUD() {
+        MBProgressHUD.hide(for: self.contentView, animated: true)
+    }
 
 }
 
