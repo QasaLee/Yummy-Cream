@@ -29,8 +29,9 @@
                                         <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvJ-wc-5Q6" customClass="IceCreamView" customModule="Yummy_Cream" customModuleProvider="target">
-                                        <rect key="frame" x="83.5" y="40" width="215" height="430"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvJ-wc-5Q6" customClass="IceCreamView" customModule="Yummy_Cream" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="40" width="215" height="430"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rvJ-wc-5Q6" secondAttribute="height" multiplier="1:2" id="w7t-CG-hla"/>
                                         </constraints>
@@ -42,7 +43,7 @@
                                     <constraint firstItem="q8F-Ax-Rcr" firstAttribute="centerX" secondItem="fmn-ld-LQS" secondAttribute="centerX" id="QFh-Ka-gxi"/>
                                     <constraint firstAttribute="bottom" secondItem="q8F-Ax-Rcr" secondAttribute="bottom" constant="10" id="VMS-A0-Ffd"/>
                                     <constraint firstItem="q8F-Ax-Rcr" firstAttribute="top" secondItem="rvJ-wc-5Q6" secondAttribute="bottom" constant="10" id="dfF-AJ-ag6"/>
-                                    <constraint firstItem="rvJ-wc-5Q6" firstAttribute="centerX" secondItem="fmn-ld-LQS" secondAttribute="centerX" constant="3.5" id="ldQ-Eh-lzi"/>
+                                    <constraint firstItem="rvJ-wc-5Q6" firstAttribute="centerX" secondItem="fmn-ld-LQS" secondAttribute="centerX" id="ldQ-Eh-lzi"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oBF-Bs-nNw">
@@ -71,9 +72,9 @@
                                                     <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-k4-ynZ" customClass="ScoopView" customModule="Yummy_Cream" customModuleProvider="target">
+                                                <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-k4-ynZ" customClass="ScoopView" customModule="Yummy_Cream" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="8" width="40" height="40"/>
-                                                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="AWm-hG-Qg4"/>
                                                         <constraint firstAttribute="height" constant="40" id="J7R-xk-WJO"/>
